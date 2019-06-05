@@ -4,17 +4,23 @@ import ReactPlayer from "react-player";
 class About extends React.Component {
   state = {
     playing: false,
-    controls: true
+    controls: true,
+    width: "100%",
+    height: "100%",
+    pip: true
   };
 
   render() {
-    const { playing, controls } = this.state;
+    const { playing, controls, width, height, pip } = this.state;
     return (
       <div>
         <ReactPlayer
           url="https://pinecast.com/listen/46030d36-3db8-4521-9177-a21b76128acd.mp3"
           playing={playing}
           controls={controls}
+          pip={pip}
+          width={width}
+          height={height}
         />
       </div>
     );
