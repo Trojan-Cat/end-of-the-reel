@@ -26,7 +26,16 @@ class getFeed extends React.Component {
     if (this.state.episodes === null) {
       return <div>Enter some dates to find out what is best to wear</div>;
     } else {
-      return <li>{JSON.stringify(this.state.episodes[0].title)}</li>;
+      return (
+        <div>
+          {this.state.episodes.map(episode => (
+            <div>
+              <h2>{episode.title}</h2>
+              <p> {episode.description}</p>
+            </div>
+          ))}
+        </div>
+      );
     }
   };
 
