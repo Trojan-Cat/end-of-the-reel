@@ -10,10 +10,7 @@ const Navbar = () => (
           <Icon name="home" size="large" />
           <p>Home</p>
         </Menu.Item>
-        <Menu.Item as={NavLink} to="/about" name="about">
-          <Icon name="dashboard" size="large" />
-          <p>About</p>
-        </Menu.Item>
+
         <Menu.Item as={NavLink} to="/getFeed" name="getFeed">
           <Icon name="dashboard" size="large" />
           <p>About</p>
