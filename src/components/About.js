@@ -7,7 +7,8 @@ class About extends React.Component {
     controls: true,
     width: "100%",
     height: "100%",
-    pip: true
+    pip: true,
+    URL: "https://pinecast.com/feed/end-of-the-reel"
   };
 
   render() {

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import About from "./About";
 import Home from "./Home";
 import Navbar from "./Navbar";
+import getFeed from "./getFeed";
 
 class App extends React.Component {
   state = {};
@@ -21,6 +22,7 @@ class App extends React.Component {
 
           <Route exact path="/" component={Home} />
           <Route path="/about" component={About} />
+          <Route path="/getFeed" component={getFeed} />
         </div>
       </Router>
     );
