@@ -1,8 +1,8 @@
 import React from "react";
-import ReactPlayer from "react-player";
+//import ReactPlayer from "react-player";
 
 const Player = props => {
-  const state = {
+  /*  const state = {
     playing: false,
     controls: true,
     width: "100%",
@@ -12,7 +12,8 @@ const Player = props => {
   };
 
   const { playing, controls, width, height, pip } = state;
-
+  */
+  /*
   return (
     <div>
       <ReactPlayer
@@ -24,6 +25,13 @@ const Player = props => {
         height={height}
       />
     </div>
+  );
+  */
+  console.log(props.link);
+  return (
+    <audio controls>
+      <source src={props.link} type="audio/mpeg" />
+    </audio>
   );
 };
 
