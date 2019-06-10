@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import Player from "./Player";
+import ReactHtmlParser from "react-html-parser";
 //import xml2js from "xml2js";
 
 class getFeed extends React.Component {
@@ -36,7 +37,7 @@ class getFeed extends React.Component {
           {this.state.episodes.map(episode => (
             <div key={episode.link[0]} className="ui segment">
               <h2 className="ui header">{episode.title}</h2>
-              <p> {episode.description}</p>
+              <p> {ReactHtmlParser(episode.description)} </p>
               <br />
               <Player link={episode.link[0]} />
             </div>

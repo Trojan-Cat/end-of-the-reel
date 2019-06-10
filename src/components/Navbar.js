@@ -22,8 +22,8 @@ const Navbar = () => (
 */
 
 const Navbar = () => (
-  <div>
-    <div className="nav ui red menu">
+  <div className=" center">
+    <div className="nav ui black inverted large menu ">
       <NavLink className="item" exact to="/" name="home">
         <p>Home</p>
       </NavLink>
