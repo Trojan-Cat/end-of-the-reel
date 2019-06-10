@@ -1,22 +1,37 @@
 import React from "react";
-import { Menu, Container, Icon } from "semantic-ui-react";
+//import { Menu, Segment } from "semantic-ui-react";
 import { NavLink } from "react-router-dom";
+import "./menu.css";
 
+/*
 const Navbar = () => (
   <div>
-    <Container>
-      <Menu secondary stackable widths={3}>
+    <Segment inverted>
+      <Menu inverted pointing secondary fluid widths={2}>
         <Menu.Item as={NavLink} exact to="/" name="home">
-          <Icon name="home" size="large" />
           <p>Home</p>
         </Menu.Item>
 
-        <Menu.Item as={NavLink} to="/getFeed" name="getFeed">
-          <Icon name="dashboard" size="large" />
+        <Menu.Item as={NavLink} to="/About" name="About">
           <p>About</p>
         </Menu.Item>
       </Menu>
-    </Container>
+    </Segment>
+  </div>
+);
+*/
+
+const Navbar = () => (
+  <div>
+    <div className="nav ui red menu">
+      <NavLink className="item" exact to="/" name="home">
+        <p>Home</p>
+      </NavLink>
+
+      <NavLink className="item" to="/About" name="About">
+        <p>About</p>
+      </NavLink>
+    </div>
   </div>
 );
 

@@ -9,6 +9,10 @@ class getFeed extends React.Component {
     URL: "https://pinecast.com/feed/end-of-the-reel"
   };
 
+  componentDidMount() {
+    this.getFeed();
+  }
+
   getFeed() {
     var parseString = require("xml2js").parseString;
     let URL = this.state.URL;
@@ -23,15 +27,15 @@ class getFeed extends React.Component {
     );
   }
 
-  displayTest = () => {
+  feed = () => {
     if (this.state.episodes === null) {
-      return <div>Enter some dates to find out what is best to wear</div>;
+      return <div>Grabbing the Feed</div>;
     } else {
       return (
-        <div>
+        <div className="ui container">
           {this.state.episodes.map(episode => (
-            <div key={episode.link[0]}>
-              <h2>{episode.title}</h2>
+            <div key={episode.link[0]} className="ui segment">
+              <h2 className="ui header">{episode.title}</h2>
               <p> {episode.description}</p>
               <br />
               <Player link={episode.link[0]} />
@@ -45,17 +49,10 @@ class getFeed extends React.Component {
   render() {
     return (
       <div>
-        <button onClick={() => this.getFeed()}>Click</button>
-        <div>{this.displayTest()}</div>
+        <div>{this.feed()}</div>
       </div>
     );
   }
 }
 
 export default getFeed;
-
-/*
-<audio controls src={episode.link}>
-Your browser does not support audio
-</audio>
-*/

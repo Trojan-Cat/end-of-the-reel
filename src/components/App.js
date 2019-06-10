@@ -2,25 +2,22 @@ import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import Home from "./Home";
 import Navbar from "./Navbar";
-import getFeed from "./getFeed";
+import About from "./About";
+import Title from "./Title";
 
 class App extends React.Component {
   state = {};
 
   render() {
     return (
-      <Router>
-        <Navbar
-          onItemClick={selected => this.setState({ activeItem: selected })}
-          isActive={this.state.activeItem}
-        />
+      <Router className="backgrounds ui container">
+        <Title />
+        <Navbar />
         <div className="ui container">
-          <div className="ui">stuff</div>
-
-          <hr />
+          <div className="ui horizontal divider" />
 
           <Route exact path="/" component={Home} />
-          <Route path="/getFeed" component={getFeed} />
+          <Route path="/About" component={About} />
         </div>
       </Router>
     );

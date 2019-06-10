@@ -1,0 +1,14 @@
+.titleBar {
+  background-color: #f62a3c;
+  align-content: center;
+  align-self: center;
+  align-items: center;
+}
+
+.title {
+  font-family: Oswald;
+  color: #fab62b;
+  font-size: 5em;
+  text-align: center;
+  text-shadow: 2px 2px #0a0909;
+}
