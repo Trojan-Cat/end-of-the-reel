@@ -36,6 +36,7 @@ class getFeed extends React.Component {
               <h2 className="ui header">{episode.title}</h2>
               <p> {ReactHtmlParser(episode.description)} </p>
               <br />
+
               <Player link={episode.link[0]} />
             </div>
           ))}
