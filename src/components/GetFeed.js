@@ -2,7 +2,6 @@ import React from "react";
 import axios from "axios";
 import Player from "./Player";
 import ReactHtmlParser from "react-html-parser";
-//import xml2js from "xml2js";
 
 class getFeed extends React.Component {
   state = {
@@ -21,9 +20,7 @@ class getFeed extends React.Component {
     axios.get(`${URL}`).then(response =>
       parseString(response.data, (err, result) => {
         const episodes = result.rss.channel[0].item;
-
         this.setState({ episodes: episodes });
-        console.log(this.state.episodes);
       })
     );
   }

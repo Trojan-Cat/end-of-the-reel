@@ -4,21 +4,26 @@ import Home from "./Home";
 import Navbar from "./Navbar";
 import About from "./About";
 import Title from "./Title";
+import Footer from "./Footer";
 
 class App extends React.Component {
   state = {};
 
   render() {
     return (
-      <Router className="backgrounds ui container">
-        <Title />
+      <Router className=" ui Site backgrounds main ui container ">
+        <Title className=" large top " />
         <Navbar />
-        <div className="ui container">
+
+        <div className="ui container Site-content">
           <div className="ui horizontal divider" />
 
           <Route exact path="/" component={Home} />
           <Route path="/About" component={About} />
         </div>
+
+        <div className="bottom ui horizontal divider " />
+        <Footer className="fixed bottom" />
       </Router>
     );
   }
