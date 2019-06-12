@@ -11,7 +11,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <Router className=" ui Site backgrounds main ui container ">
+      <Router className="asody ui Site backgrounds main ui container ">
         <Title className=" large top " />
         <Navbar />
 

@@ -34,9 +34,8 @@ class getFeed extends React.Component {
           {this.state.episodes.map(episode => (
             <div key={episode.link[0]} className="ui segment">
               <h2 className="ui header">{episode.title}</h2>
-              <p> {ReactHtmlParser(episode.description)} </p>
+              <div> {ReactHtmlParser(episode.description)} </div>
               <br />
-
               <Player link={episode.link[0]} />
             </div>
           ))}
