@@ -1,3 +1,12 @@
+Live Project running at: [endOfTheReel.xyz](endofthereel.xyz)
+
+TODO
+
+- [ ] Change to use Hooks
+- [ ] Test with other podcast RSS feeds to allow other podcasters to use project for thier own site
+- [ ] Create backend sign-in so that others can change colors etc for thier own podcast
+- [ ] Tutorial on using for your own podcast
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

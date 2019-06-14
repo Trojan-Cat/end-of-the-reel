@@ -1,6 +1,6 @@
 .titleBar {
   background-color: #f62a3c;
-  padding: 5%;
+  padding: 3%;
   align-content: center;
   align-self: center;
   align-items: center;
@@ -13,4 +13,20 @@
   font-size: 6em;
   text-align: center;
   text-shadow: 2px 2px #0a0909;
+}
+
+@media (max-width: 900px) {
+  .titleBar {
+    padding: 2%;
+  }
+
+  .title {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 400px) {
+  .title {
+    font-size: 2.5em;
+  }
 }
