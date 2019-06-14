@@ -1,4 +1,4 @@
-Live Project running at: [endOfTheReel.xyz](endofthereel.xyz)
+Live Project running at: [End Of The Reel](endofthereel.xyz)
 
 TODO
 
